@@ -15,16 +15,17 @@ class LineInfo:
         self.invert = invert
         self.line_type = line_type
         self.text = text
- 
+
 # Create LineInfo objects for each line
 line_info_list = [
     # textbox_width, top_padding, bottom_padding, left_padding, right_padding, font_size, bold, color, justify, invert, line_type, text
-    LineInfo(250, 15,  10, 40, 10, 100, True, 'yellow', 'Left', False, "header", "1"),
-    LineInfo(250, 100, 150, 10, 10, 100, True, 'black', 'center', False, "text", "VIVEKA"),
-    LineInfo(350, 10,  10, 10, 10, 25, True, 'black', 'center', False, "text", "नासतो विद्यते भावो नाभावो विद्यते सत: |  उभयोरपि दृष्टोऽन्तस्त्वनयोस्तत्त्वदर्शिभि: || 16||"),
-    LineInfo(350, 25,  25, 10, 10, 25, True, 'black', 'center', False, "text", "BG2.16: The unreal has no being, the real has no non-being. The final truth of these two has been seen indeed by those who have experienced the essence of things."),
-    LineInfo(300, 40,  10, 40, 40, 25, True, 'black', 'center', False, "text", "Caught in the illusion (Maya) of the ever-changing world we take the temporary world around us for real, making it difficult to recognize our own eternal nature."),
-    LineInfo(750, 100,  15, 680, 10, 100, True, 'yellow', 'Left', True, "footer", "1"),
+    LineInfo(250, 10,  10, 30, 10, 100, True, 'black', 'Left', False, "header", "10"),
+    LineInfo(350, 50, 60, 10, 10, 100, True, 'black', 'center', False, "text", "Purification"),
+    LineInfo(350, 10,  50, 10, 10, 25, True, 'black', 'center', False, "text", "नासतो विद्यते भावो नाभावो विद्यते सत: |  उभयोरपि दृष्टोऽन्तस्त्वनयोस्तत्त्वदर्शिभि: ||"),
+    LineInfo(350, 0,  0, 10, 10, 25, True, 'black', 'center', False, "text", "नासतो विद्यते भावो नाभावो विद्यते सत: |  उभयोरपि दृष्टोऽन्तस्त्वनयोस्तत्त्वदर्शिभि: ||"),
+    LineInfo(350, 0,  50, 10, 10, 25, True, 'black', 'center', False, "text", "नासतो विद्यते भावो नाभावो विद्यते सत: |  उभयोरपि दृष्टोऽन्तस्त्वनयोस्तत्त्वदर्शिभि: ||"),
+    LineInfo(350, 40,  100, 10, 10, 25, True, 'black', 'center', False, "text", "BG 13.8-12: Humbleness; freedom from hypocrisy; non-violence; forgiveness; simplicity; service of the Guru; cleanliness of body and mind; steadfastness; and self-control; dispassion toward the objects of the senses; absence of egotism; keeping in mind the evils of birth, disease, old age, and death; non-attachment; absence of clinging to spouse, children, home, and so on; even-mindedness amidst desired and undesired events in life"),
+    LineInfo(750, 100,  0, 640, 10, 100, True, 'black', 'Left', True, "footer", "10"),
 ]
 
 
@@ -69,24 +70,24 @@ def main():
     # Create a blank white image
     # width and height for a standard playing card at 300 dpi
     width, height = 750, 1050
-    img = Image.new('RGBA', (width, height))
+    img = Image.new('RGBA', (width, height), color='gold')
 
     # Load an image
     bk_img = Image.open('background.jpg')
 
-    # Define the size of the border
-    border_size = 15  # Adjust this value to change the size of the border
+  #   # Define the size of the border
+    border_size = 0  # Adjust this value to change the size of the border
 
-    # Resize the background image to be slightly smaller than the main image
-    bk_img = bk_img.resize((width - 2*border_size, height - 2*border_size), Image.ANTIALIAS)
+  #   # Resize the background image to be slightly smaller than the main image
+  #   bk_img = bk_img.resize((width - 2*border_size, height - 2*border_size), Image.ANTIALIAS)
 
-   # Round the corners of the background image
-    bk_img = round_corners(bk_img, 50)  # Adjust the radius as needed
+  #  # Round the corners of the background image
+  #   bk_img = round_corners(bk_img, 50)  # Adjust the radius as needed
 
 
-    # Convert the images to 'RGBA' mode
-    img = img.convert("RGBA")
-    bk_img = bk_img.convert("RGBA")
+  #   # Convert the images to 'RGBA' mode
+  #   img = img.convert("RGBA")
+  #   bk_img = bk_img.convert("RGBA")
 
     # Overlay the background onto the existing image, centered to create a border
     img.paste(bk_img, (border_size, border_size))
@@ -124,7 +125,7 @@ def main():
             # Check if the text should be inverted
             if line_info.invert:
                 # Create a new image for the text
-                text_img = Image.new('RGB', (line_width, font.getsize(line)[1]), color = 'black')
+                text_img = Image.new('RGB', (line_width, font.getsize(line)[1]), color = (255,192,0))
                 text_d = ImageDraw.Draw(text_img)
 
                 # Draw the text on the new image
