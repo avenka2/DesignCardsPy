@@ -226,13 +226,15 @@ def draw_sanskrit(img, card_info, text_color):
     for i, line in enumerate(split_lines):
         delimiter = ' I' if i % 2 == 0 else ' II'
         if len(line.strip()) > 0:
-          delimited_lines.append(line.strip() + delimiter)
+            delimited_lines.append(line.strip() + delimiter)
     lines = []
     for i, line in enumerate(delimited_lines):
         wrapped_lines = textwrap.wrap(line, width=(435) // font.getsize(' ')[0])
         for wrapped_line in wrapped_lines:
-          if len(wrapped_line) > 0:
-              lines.append(wrapped_line.strip())
+            if len(wrapped_line) > 1:
+                lines.append(wrapped_line.strip())
+            elif len(wrapped_line) == 1:
+                lines[-1] = lines[-1]+ ' ' + wrapped_line
     padding_lines = 9 - len(lines)
     lines = [" " * (len(lines[0]) // 2)] * (padding_lines // 2) + lines + [" " * (len(lines[0]) // 2)] * (padding_lines - padding_lines // 2)
     return draw_multiline_text(img, lines, font, 200, text_color)
