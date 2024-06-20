@@ -82,7 +82,7 @@ CardInfo("Karma Yoga","Green","1","Grief","3.36","Arjuna asked: Why do people co
 CardInfo("Karma Yoga","Green","2","Motivation","2.1,2.3","Seeing Arjuna in tears, full of pity and grief, Krishna spoke with a smile. Why has this doubt gripped you at this important hour? This isn't the way for a hero. It won't bring glory, only shame. Don't give in to this weakness. Be strong, rise above it, O, conqueror of evil!","तं तथा कृपयाविष्टमश्रुपूर्णाकुलेक्षणम् | विषीदन्तमिदं वाक्यमुवाच मधुसूदन:  ||"),
 CardInfo("Karma Yoga","Green","3","Purpose","2.32,18.46","happy are the people who find a purpose in their profession opening for them the stairway to heaven. By performing one’s natural occupation well, one worships work itself and benefits all living beings. By such performance of work, a person easily attains perfection.","यदृच्छया चोपपन्नं स्वर्गद्वारमपावृतम् | सुखिन: क्षत्रिया: पार्थ लभन्ते युद्धमीदृशम्  || यत: प्रवृत्तिर्भूतानां येन सर्वमिदं ततम् | स्वकर्मणा तमभ्यर्च्य सिद्धिं विन्दति मानव:  ||"),
 CardInfo("Karma Yoga","Green","4","Self-Control","2.6","The senses are very strong and can pull even the mind of a person with self-control into bad habbits. ","न चैतद्विद्म: कतरन्नो गरीयोयद्वा जयेम यदि वा नो जयेयु: | यानेव हत्वा न जिजीविषामस्तेऽवस्थिता: प्रमुखे धार्तराष्ट्रा:  ||"),
-CardInfo("Karma Yoga","Green","5","Training","16.1,16.2,16.3","These saintly virtues are practices that prepares one for freedom by focussing your mind: fearlessness, noble thoughts, commitment to learning, generosity, sense-control, sacrifice, simple life, honesty,non-violence, truthfullness, calm, peace, detachment, and avoid fault finding with others.","अभयं सत्त्वसंशुद्धिर्ज्ञानयोगव्यवस्थिति: | दानं दमश्च यज्ञश्च स्वाध्यायस्तप आर्जवम्  || अहिंसा सत्यमक्रोधस्त्याग: शान्तिरपैशुनम् | दया भूतेष्वलोलुप्त्वं मार्दवं ह्रीरचापलम्  || तेज: क्षमा धृति: शौचमद्रोहोनातिमानिता | भवन्ति सम्पदं दैवीमभिजातस्य भारत  ||"),
+CardInfo("Karma Yoga","Green","5","Training","16.1,16.2,16.3","Purify and focus the mind to prepare for freedom through fearlessness, noble thoughts, learning, generosity, sense-control, sacrifice, simple life, honesty, non-violence, truthfullness, calm, peace, detachment, and avoid fault finding.","अभयं सत्त्वसंशुद्धिर्ज्ञानयोगव्यवस्थिति: | दानं दमश्च यज्ञश्च स्वाध्यायस्तप आर्जवम्  || अहिंसा सत्यमक्रोधस्त्याग: शान्तिरपैशुनम् | दया भूतेष्वलोलुप्त्वं मार्दवं ह्रीरचापलम्  || तेज: क्षमा धृति: शौचमद्रोहोनातिमानिता | भवन्ति सम्पदं दैवीमभिजातस्य भारत  ||"),
 CardInfo("Karma Yoga","Green","6","Action-Inaction","4.16,4.19","Action is superior to inaction as even staying alive requires effort. But what is action and inaction? Hear this secret: Those who see action in inaction and inaction in action are truly wise. Work done without desire, and without worrying about outcome, is action. All else is inaction.","किं कर्म किमकर्मेति कवयोऽप्यत्र मोहिता: | तत्ते कर्म प्रवक्ष्यामि यज्ज्ञात्वा मोक्ष्यसेऽशुभात्  || यस्य सर्वे समारम्भा: कामसङ्कल्पवर्जिता: | ज्ञानाग्निदग्धकर्माणं तमाहु: पण्डितं बुधा:  ||"),
 CardInfo("Karma Yoga","Green","7","Leadership","3.20,3.21","Action is superior to inaction as even staying alive requires effort. But what is action and inaction? Hear this secret: Those who see action in inaction and inaction in action are truly wise. Work done without desire, and without worrying about outcome, is action. All else is inaction.","कर्मणैव हि संसिद्धिमास्थिता जनकादय: | लोकसंग्रहमेवापि सम्पश्यन्कर्तुमर्हसि  || यद्यदाचरति श्रेष्ठस्तत्तदेवेतरो जन: | स यत्प्रमाणं कुरुते लोकस्तदनुवर्तते  ||"),
 CardInfo("Karma Yoga","Green","8","Work Instruments","13.3","They alone are wise who understand that all actions are performed by material nature using body as the instrument while the embodied soul actually does nothing. ","क्षेत्रज्ञं चापि मां विद्धि सर्वक्षेत्रेषु भारत | क्षेत्रक्षेत्रज्ञयोर्ज्ञानं यत्तज्ज्ञानं मतं मम  ||"),
@@ -214,7 +214,7 @@ def draw_multiline_text(img, lines, font, start_y, text_color):
     y = start_y
     for line in lines:
         line_width = font.getsize(line)[0]
-        pos = ((img.width - line_width) // 2, y)
+        pos = ((img.width - line_width) // 2+10, y)
         draw_text(img, line, font, pos, text_color)
         y += font.getsize(line)[1]
     return img
@@ -226,11 +226,11 @@ def draw_sanskrit(img, card_info, text_color):
     for i, line in enumerate(split_lines):
         delimiter = ' I' if i % 2 == 0 else ' II'
         if len(line.strip()) > 0:
-          delimited_lines.append(line.strip() + delimiter)    
+          delimited_lines.append(line.strip() + delimiter)
     lines = []
     for i, line in enumerate(delimited_lines):
-        wrapped_lines = textwrap.wrap(line, width=(430) // font.getsize(' ')[0])
-        for wrapped_line in wrapped_lines: 
+        wrapped_lines = textwrap.wrap(line, width=(435) // font.getsize(' ')[0])
+        for wrapped_line in wrapped_lines:
           if len(wrapped_line) > 0:
               lines.append(wrapped_line.strip())
     padding_lines = 9 - len(lines)
@@ -240,7 +240,7 @@ def draw_sanskrit(img, card_info, text_color):
 def draw_vno(img, card_info, text_color):
     font = ImageFont.truetype('NotoSansDevanagari-Bold.ttf', 35)
     draw_multiline_text(img,['BG '+card_info.vno],font,520,text_color)
-    return img    
+    return img
 
 def draw_vdesc(img, card_info, text_color):
     font = ImageFont.truetype('NotoSansDevanagari-Bold.ttf', 35)
@@ -305,19 +305,45 @@ def save_page(images, page_number):
 
     # Save the page
     page_img.save(f"gitacards/page_{page_number}.png")
+from PIL import Image
+import img2pdf
+import os
+from PIL import Image
+from reportlab.pdfgen import canvas
+from reportlab.lib.units import inch
 
-    
+def png_to_pdf(folder_path, output_filename):
+  """
+  Converts all PNG files in a folder to a single PDF, preserving A4 size (2480x3508 pixels).
+
+  Args:
+    folder_path: Path to the folder containing PNG files.
+    output_filename: Name of the output PDF file.
+  """
+  images = [
+    Image.open(os.path.join(folder_path,f))
+    for f in os.listdir(folder_path) if f.endswith(".png")]
+
+  resized_images = [i.resize((i.width//3,i.height//3)) for i in images]
+
+  resized_images[0].save(
+      output_filename, "PDF" ,resolution=100.0, save_all=True, append_images=resized_images[1:]
+  )
+
+
+
 import shutil
 def main():
     i = 0
     # Create a new directory
     new_dir = "gitacards"
-    shutil.rmtree(new_dir)
+    shutil.rmtree(new_dir, ignore_errors=True)
     os.mkdir(new_dir)
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
         for card_info in card_deck:
             executor.submit(process_card, card_info)
+    png_to_pdf(new_dir,'gc.pdf')
 
 if __name__ == "__main__":
     main()
