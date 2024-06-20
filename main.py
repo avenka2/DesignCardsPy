@@ -245,7 +245,7 @@ def draw_vno(img, card_info, text_color):
 def draw_vdesc(img, card_info, text_color):
     font = ImageFont.truetype('NotoSansDevanagari-Bold.ttf', 35)
     card_info.vdesc = card_info.vdesc.capitalize()
-    lines = textwrap.wrap(card_info.vdesc, width=(320) // font.getsize(' ')[0])
+    lines = textwrap.wrap(card_info.vdesc, width=(310) // font.getsize(' ')[0])
     padding_lines = 9 - len(lines)
     lines = [" " * (len(lines[0]) // 2)] * (padding_lines // 2) + lines + [" " * (len(lines[0]) // 2)] * (padding_lines - padding_lines // 2)
     return draw_multiline_text(img, lines, font, 620, text_color)
