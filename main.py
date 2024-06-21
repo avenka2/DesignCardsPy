@@ -319,7 +319,7 @@ def draw_vdesc(img, card_info, text_color):
 def draw_yoga(img, card_info, text_color):
     font = ImageFont.truetype('NotoSansDevanagari-Bold.ttf', 60)
     card_info.yoga = card_info.yoga.capitalize()
-    draw_text(img, card_info.yoga, font, (150, 1025), text_color)
+    draw_text(img, card_info.yoga, font, (150, 1030), text_color)
     return img
 
 # Initialize the list of images
