@@ -16,7 +16,7 @@ class CardInfo:
 
 card_deck = [
 CardInfo("Jnana Yoga","Yellow","0","ignorance","2.42,2.43","lost in misunderstanding, many are: Crave for fame, power, gold and sense pleasures in exhchange for rituals the books prescribe, but miss the deeper truth they hide. Through wisdom and compassion, the truth we connect, not through passion and selfish effect.","यामिमां पुष्पितां वाचं प्रवदन्त्यविपश्चित: | वेदवादरता: पार्थ नान्यदस्तीति वादिन: || कामात्मान: स्वर्गपरा जन्मकर्मफलप्रदाम् | क्रियाविशेषबहुलां भोगैश्वर्यगतिं प्रति ||"),
-CardInfo("Jnana Yoga","Yellow","1","Samsara","2.63","Anger clouds the mind. Truth hidden, memories fades, shattered is intellect. With no intellect, ruin awaits the angry one.","क्रोधाद्भवति सम्मोह: सम्मोहात्स्मृतिविभ्रम: | स्मृतिभ्रंशाद् बुद्धिनाशो बुद्धिनाशात्प्रणश्यति ||"),
+CardInfo("Jnana Yoga","Yellow","1","Suffering","2.63","Anger clouds the mind. Truth hidden, memories fades, shattered is intellect. With no intellect, ruin awaits the angry one.","क्रोधाद्भवति सम्मोह: सम्मोहात्स्मृतिविभ्रम: | स्मृतिभ्रंशाद् बुद्धिनाशो बुद्धिनाशात्प्रणश्यति ||"),
 CardInfo("Jnana Yoga","Yellow","2","Seeking","3.36","Arjun asked: Why is a person impelled to commit sinful acts, even unwillingly, as if by force, O descendent of Vrishni (Krishna)?","अथ केन प्रयुक्तोऽयं पापं चरति पूरुष: | अनिच्छन्नपि वार्ष्णेय बलादिव नियोजित: ||"),
 CardInfo("Jnana Yoga","Yellow","3","Guru","4.34","to learn the truth, a spiritual master can help. Approach them with respect, young one. Serve them with humility, for wisdom they possess. Seen the Truth, they have. Share it, they can, if open your mind is","तद्विद्धि प्रणिपातेन परिप्रश्नेन सेवया | उपदेक्ष्यन्ति ते ज्ञानं ज्ञानिनस्तत्त्वदर्शिन: ||"),
 CardInfo("Jnana Yoga","Yellow","4","Purification","13.8,13.9","cultivate these you must, for divine knowledge they bring purifies one like none: humility, truthfulness, harmlessness, forgiveness, simple ways. Serve your teacher well, young one. Cleanse body and mind. Steadfast be, and control your desires. ","अमानित्वमदम्भित्वमहिंसा क्षान्तिरार्जवम् | आचार्योपासनं शौचं स्थैर्यमात्मविनिग्रह: || इन्द्रियार्थेषु वैराग्यमनहङ्कार एव च | जन्ममृत्युजराव्याधिदु:खदोषानुदर्शनम् || "),
@@ -27,7 +27,7 @@ CardInfo("Jnana Yoga","Yellow","8","Theory","4.32","Upanishads speak the truth i
 CardInfo("Jnana Yoga","Yellow","9","wisdom","13.2,13.3","A changing field of activities, the body-mind is, and the knower of this field, the soul is. O Scion, in all these fields, there is only one knower who I am. Final truth this I hold.","इदं शरीरं कौन्तेय क्षेत्रमित्यभिधीयते | एतद्यो वेत्ति तं प्राहु: क्षेत्रज्ञ इति तद्विद: || क्षेत्रज्ञं चापि मां विद्धि सर्वक्षेत्रेषु भारत | क्षेत्रक्षेत्रज्ञयोर्ज्ञानं यत्तज्ज्ञानं मतं मम ||"),
 CardInfo("Jnana Yoga","Yellow","10","Enlightenment","13.24","Those who understand the truth about Supreme Soul, the individual soul, material nature, and the interaction of the three modes of nature will suffer no longer. Liberated are they, regardless of their condition.","य एवं वेत्ति पुरुषं प्रकृतिं च गुणै: सह | सर्वथा वर्तमानोऽपि न स भूयोऽभिजायते ||"),
 CardInfo("Jnana Yoga","Yellow","0","ignorance","14.18","Upward rise those in knowledge, stagnant the passionate stay, downward the ignorant fall.","ऊर्ध्वं गच्छन्ति सत्त्वस्था मध्ये तिष्ठन्ति राजसा: | जघन्यगुणवृत्तिस्था अधो गच्छन्ति तामसा: ||"),
-CardInfo("Jnana Yoga","Yellow","1","Samsara","18.38","Fleeting perceptions of happiness and distress, contact between the senses and world gives rise. Come and go like changing seasoons these don’t last. Sweet it seems, but bitter in the end.","विषयेन्द्रियसंयोगाद्यत्तदग्रेऽमृतोपमम् | परिणामे विषमिव तत्सुखं राजसं स्मृतम् ||"),
+CardInfo("Jnana Yoga","Yellow","1","Suffering","18.38","Fleeting perceptions of happiness and distress, contact between the senses and world gives rise. Come and go like changing seasoons these don’t last. Sweet it seems, but bitter in the end.","विषयेन्द्रियसंयोगाद्यत्तदग्रेऽमृतोपमम् | परिणामे विषमिव तत्सुखं राजसं स्मृतम् ||"),
 CardInfo("Jnana Yoga","Yellow","2","Seeking","2.54","Arjun asked: How does an enlightened person talk? How does he sit? How does he walk?","स्थितप्रज्ञस्य का भाषा समाधिस्थस्य केशव | स्थितधी: किं प्रभाषेत किमासीत व्रजेत किम् ||"),
 CardInfo("Jnana Yoga","Yellow","3","Guru","6.43","Walk the path of Yog who does, reawakens the force of wisdom from past lives and strives even harder toward perfection in Yog. ","तत्र तं बुद्धिसंयोगं लभते पौर्वदेहिकम् | यतते च ततो भूय: संसिद्धौ कुरुनन्दन ||"),
 CardInfo("Jnana Yoga","Yellow","4","Purification","13.10,13.11,12","Much to prepare, you have. Lose the ego, reflect on suffering in birth, disease, old age, and death. Cling not to the changing, nor possessions. Let go of desires, for happiness, it does not bring. Through equanimity, In joy and sorrow, purify the mind, for a brighter path it reveals.","असक्तिरनभिष्वङ्ग: पुत्रदारगृहादिषु | नित्यं च समचित्तत्वमिष्टानिष्टोपपत्तिषु || मयि चानन्ययोगेन भक्तिरव्यभिचारिणी | विविक्तदेशसेवित्वमरतिर्जनसंसदि || अध्यात्मज्ञाननित्यत्वं तत्वज्ञानार्थदर्शनम् | एतज्ज्ञानमिति प्रोक्तमज्ञानं यदतोऽन्यथा ||"),
@@ -37,14 +37,18 @@ CardInfo("Jnana Yoga","Yellow","7","Go Deeper","18.63","Thus, I have explained t
 CardInfo("Jnana Yoga","Yellow","8","Theory","13.5","Sung the truth, Great sages have, about the seen and the seer in manifold ways. Sound logic and concluisive evidence for the truth Vedic hymns state, and Brahma Sūtra reveals.","ऋषिभिर्बहुधा गीतं छन्दोभिर्विविधै: पृथक् | ब्रह्मसूत्रपदैश्चैव हेतुमद्भिर्विनिश्चितै: ||"),
 CardInfo("Jnana Yoga","Yellow","9","wisdom","13.34,13.35","Like shines one Sun light on all planets its light. One soul shines light on the entire body-mind. See this difference, those who can, with wisdom's eyes: between the vehicle(body-mind) and the soul that drives it. They escape from material world to the ultimate destination.","यथा प्रकाशयत्येक: कृत्स्नं लोकमिमं रवि: | क्षेत्रं क्षेत्री तथा कृत्स्नं प्रकाशयति भारत || क्षेत्रक्षेत्रज्ञयोरेवमन्तरं ज्ञानचक्षुषा | भूतप्रकृतिमोक्षं च ये विदुर्यान्ति ते परम् ||"),
 CardInfo("Jnana Yoga","Yellow","10","Enlightenment","4.24,3.17","Completely one with God-consciousness is such a one for whom: the offering is Brahman, the ladle with which it is offered is Brahman, the act of offering is Brahman, and the sacrificial fire is also Brahman. They understand the mystery of one appearing as infinitely many!","ब्रह्मार्पणं ब्रह्म हविर्ब्रह्माग्नौ ब्रह्मणा हुतम् | ब्रह्मैव तेन गन्तव्यं ब्रह्मकर्मसमाधिना || यस्त्वात्मरतिरेव स्यादात्मतृप्तश्च मानव: | आत्मन्येव च सन्तुष्टस्तस्य कार्यं न विद्यते ||"),
-CardInfo("Jnana Yoga","Yellow","Av","Avatar","4.7","Whenever there is a decline in righteousness and an increase in unrighteousness O Arjun at that time I manifest Myself on earth. ","यदा यदा हि धर्मस्य ग्लानिर्भवति भारत | अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम् ||"),
+CardInfo("Jnana Yoga","Yellow","Av","Avatar","9.19","I am mighty Time, the source of destruction that comes forth to annihilate the evil in the worlds.","कालोऽस्मि लोकक्षयकृत्प्रवृद्धो लोकान्समाहर्तुमिह प्रवृत्त: | ऋतेऽपि त्वां न भविष्यन्ति सर्वे येऽवस्थिता: प्रत्यनीकेषु योधा: ||"),
+CardInfo("Jnana Yoga","Yellow","So","Soul","2.17","That which pervades the entire body, know it to be indestructible. No one can cause the destruction of the imperishable soul.","अविनाशि तु तद्विद्धि येन सर्वमिदं ततम् | विनाशमव्ययस्यास्य न कश्चित्कर्तुमर्हति ||"),
+CardInfo("Jnana Yoga","Yellow","Sa","Samsara","9.10","The world keeps revolving to produce moving and unmoving objects under my direction","मयाध्यक्षेण प्रकृति: सूयते सचराचरम् |हेतुनानेन कौन्तेय जगद्विपरिवर्तते ||"),
+CardInfo("Jnana Yoga","Yellow","Re","Rebirth","2.22","As a person sheds worn-out garments and wears new ones, likewise, at the time of rebirth, the soul casts off its worn-out body and enters a new one.","वासांसि जीर्णानि यथा विहाय नवानि गृह्णाति नरोऽपराणि | तथा शरीराणि विहाय जीर्णा न्यन्यानि संयाति नवानि देही ||"),
 CardInfo("Jnana Yoga","Yellow","T","Tamas","14.8","O Arjun tamo guána which is born of ignorance is the cause of illusion for the embodied souls. It deludes all living beings through negligence laziness and sleep. ","तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम् । प्रमादालस्यनिद्राभिस्तन्निबध्नाति भारत ||"),
 CardInfo("Jnana Yoga","Yellow","R","Rajas","14.7","O Arjun, rajo guna is of the nature of passion. It arises from worldly desires and affections, and binds the soul through attachment to fruitive actions.","रजो रागात्मकं विद्धि तृष्णासङ्गसमुद्भवम् | तन्निबध्नाति कौन्तेय कर्मसङ्गेन देहिनम् ||"),
 CardInfo("Jnana Yoga","Yellow","S","Sattva","14.6","Amongst these, sattva guna, the mode of goodness, being purer than the others, is illuminating and full of well-being. O sinless one, it binds the soul by creating attachment for a sense of happiness and knowledge.","तत्र सत्त्वं निर्मलत्वात्प्रकाशकमनामयम् | सुखसङ्गेन बध्नाति ज्ञानसङ्गेन चानघ ||"),
-CardInfo("Jnana Yoga","Yellow","M","Maya","7.14","My divine energy Maya consisting of the three modes of nature is very difficult to overcome. But those who surrender unto Me cross over it easily. ","दैवी ह्येषा गुणमयी मम माया दुरत्यया | मामेव ये प्रपद्यन्ते मायामेतां तरन्ति ते ||"),
-CardInfo("Jnana Yoga","Yellow","Sa","Samsara","9.3","People who have no faith in this dharma are unable to attain Me, O conqueror of enemies. They repeatedly come back to this world in the cycle of birth and death.","अश्रद्दधाना: पुरुषा धर्मस्यास्य परन्तप | अप्राप्य मां निवर्तन्ते मृत्युसंसारवर्त्मनि ||"),
-CardInfo("Jnana Yoga","Yellow","Re","Rebirth","2.12","Never was there a time when I did not exist, nor you, nor all these kings; nor in the future shall any of us cease to be.","न त्वेवाहं जातु नासं न त्वं नेमे जनाधिपाः | न चैव न भविष्याम: सर्वे वयमत: परम् ||"),
-CardInfo("Jnana Yoga","Yellow","So","Soul","2.24","The soul is unbreakable and incombustible; it can neither be dampened nor dried. It is everlasting, in all places, unalterable, immutable, and primordial.","अच्छेद्योऽयमदाह्योऽयमक्लेद्योऽशोष्य एव च | नित्य: सर्वगत: स्थाणुरचलोऽयं सनातन: ||"),
+CardInfo("Jnana Yoga","Yellow","M","Maya","7.13","Deluded by the three modes of Maya(tamas,rajas & Sattva), people in this world are unable to know Me, the imperishable and eternal.","त्रिभिर्गुणमयैर्भावैरेभि: सर्वमिदं जगत्  | मोहितं नाभिजानाति मामेभ्य: परमव्ययम् ||"),
+CardInfo("Jnana Yoga","Yellow","T","Tamas","14.8","O Arjun tamo guána which is born of ignorance is the cause of illusion for the embodied souls. It deludes all living beings through negligence laziness and sleep. ","तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम् । प्रमादालस्यनिद्राभिस्तन्निबध्नाति भारत ||"),
+CardInfo("Jnana Yoga","Yellow","R","Rajas","14.7","O Arjun, rajo guna is of the nature of passion. It arises from worldly desires and affections, and binds the soul through attachment to fruitive actions.","रजो रागात्मकं विद्धि तृष्णासङ्गसमुद्भवम् | तन्निबध्नाति कौन्तेय कर्मसङ्गेन देहिनम् ||"),
+CardInfo("Jnana Yoga","Yellow","S","Sattva","14.6","Amongst these, sattva guna, the mode of goodness, being purer than the others, is illuminating and full of well-being. O sinless one, it binds the soul by creating attachment for a sense of happiness and knowledge.","तत्र सत्त्वं निर्मलत्वात्प्रकाशकमनामयम् | सुखसङ्गेन बध्नाति ज्ञानसङ्गेन चानघ ||"),
+CardInfo("Jnana Yoga","Yellow","M","Maya","7.13","Deluded by the three modes of Maya(tamas,rajas & Sattva), people in this world are unable to know Me, the imperishable and eternal.","त्रिभिर्गुणमयैर्भावैरेभि: सर्वमिदं जगत्  | मोहितं नाभिजानाति मामेभ्य: परमव्ययम् ||"),
 CardInfo("Bhakthi Yoga","Red","0","Doubting","16.8","Lost faith, some have. They say time and universe is a coincidence without a guiding God.","असत्यमप्रतिष्ठं ते जगदाहुरनीश्वरम् | अपरस्परसम्भूतं किमन्यत्कामहैतुकम् ||"),
 CardInfo("Bhakthi Yoga","Red","1","Distress","1.29,1.31","Arjua said: My whole body shivers; hair stands on its end. My bow, the Gandiv, slips from my grasp, and my skin burns all over. My mind spins like a tornado; I am unable to hold myself steady. O Krishna, I only see doom.","वेपथुश्च शरीरे मे रोमहर्षश्च जायते || गाण्डीवं स्रंसते हस्तात्त्वक्चै व परिदह्यते | न च शक्नोम्यवस्थातुं भ्रमतीव च मे मन: || निमित्तानि च पश्यामि विपरीतानि केशव | न च श्रेयोऽनुपश्यामि हत्वा स्वजनमाहवे ||"),
 CardInfo("Bhakthi Yoga","Red","2","Pull Towards God","7.16","O best amongst humans, four kinds of pious people engage in My devotion—the distressed, the seekers of knowledge, the seekers of worldly possessions, and those who are situated in knowledge.","चतुर्विधा भजन्ते मां जना: सुकृतिनोऽर्जुन | आर्तो जिज्ञासुरर्थार्थी ज्ञानी च भरतर्षभ ||"),
@@ -67,14 +71,18 @@ CardInfo("Bhakthi Yoga","Red","7","Devotion","9.14","Always singing My divine gl
 CardInfo("Bhakthi Yoga","Red","8","Grace of God","10.11"," Out of compassion for the faithful, I, dwelling in their hearts, destroy with the shining lamp of knowledge the darkness born of ignorance after which one transcends suffering in all situations.","तेषामेवानुकम्पार्थमहमज्ञानजं तम: | नाशयाम्यात्मभावस्थो ज्ञानदीपेन भास्वता ||"),
 CardInfo("Bhakthi Yoga","Red","9","Glory of God","10.41","Whatever you see as beautiful, glorious, or powerful, know it to spring from but a spark of My splendor. I am the beginning, middle, and end of all beings. Simply know that by one fraction of My being, I pervade and support this entire creation.","यद्यद्विभूतिमत्सत्त्वं श्रीमदूर्जितमेव वा | तत्देवावगच्छ त्वं मम तेजोंऽशसम्भवम् ||"),
 CardInfo("Bhakthi Yoga","Red","10","Attain God","11.10,11.11,11.12","To such bhakthas, God reveals His divine form, blazing brighter than a thousand suns. With fragrance of heavens, this powerful form with countless eyes and hands stands beyond all comprehension, theirs to behold – an experience that fills them with everlasting awe.","अनेकवक्त्रनयनमनेकाद्भुतदर्शनम् | अनेकदिव्याभरणं दिव्यानेकोद्यतायुधम् || दिव्यमाल्याम्बरधरं दिव्यगन्धानुलेपनम् | सर्वाश्चर्यमयं देवमनन्तं विश्वतोमुखम् || दिवि सूर्यसहस्रस्य भवेद्युगपदुत्थिता | यदि भा: सदृशी सा स्याद्भासस्तस्य महात्मन: ||"),
-CardInfo("Bhakthi Yoga","Red","Av","Avatar","4.7","Whenever there is a decline in righteousness and an increase in unrighteousness O Arjun at that time I manifest Myself on earth. ","यदा यदा हि धर्मस्य ग्लानिर्भवति भारत | अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम् ||"),
+CardInfo("Bhakthi Yoga","Red","Av","Avatar","10.31","Amongst purifiers, I am the wind, and amongst wielders of weapons, I am Lord Ram. Of water creatures, I am the crocodile, and of flowing rivers, I am the Ganges","पवन: पवतामस्मि राम: शस्त्रभृतामहम् | झषाणां मकरश्चास्मि स्रोतसामस्मि जाह्नवी || "),
+CardInfo("Bhakthi Yoga","Red","So","Soul","2.29","Some see the soul as amazing, some describe it as amazing, and some hear of the soul as amazing, while others, even on hearing, cannot understand it at all.","आश्चर्यवत्पश्यति कश्चिदेन माश्चर्यवद्वदति तथैव चान्य:  | आश्चर्यवच्चैनमन्य: शृ्णोति श्रुत्वाप्येनं वेद न चैव कश्चित् ||"),
+CardInfo("Bhakthi Yoga","Red","Sa","Samsara","9.10","The world keeps revolving to produce moving and unmoving objects under my direction","मयाध्यक्षेण प्रकृति: सूयते सचराचरम् |हेतुनानेन कौन्तेय जगद्विपरिवर्तते ||"),
+CardInfo("Bhakthi Yoga","Red","Re","Rebirth","8.16","In all the worlds of this material creation, up to the highest abode of Brahma, you will be subject to rebirth, O Arjun. But on attaining My Abode, O son of Kunti, there is no further rebirth.","आब्रह्मभुवनाल्लोका: पुनरावर्तिनोऽर्जुन | मामुपेत्य तु कौन्तेय पुनर्जन्म न विद्यते ||"),
 CardInfo("Bhakthi Yoga","Red","T","Tamas","14.8","O Arjun tamo guána which is born of ignorance is the cause of illusion for the embodied souls. It deludes all living beings through negligence laziness and sleep. ","तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम् | प्रमादालस्यनिद्राभिस्तन्निबध्नाति भारत ||"),
 CardInfo("Bhakthi Yoga","Red","R","Rajas","14.7","O Arjun, rajo guna is of the nature of passion. It arises from worldly desires and affections, and binds the soul through attachment to fruitive actions.","रजो रागात्मकं विद्धि तृष्णासङ्गसमुद्भवम् | तन्निबध्नाति कौन्तेय कर्मसङ्गेन देहिनम् ||"),
 CardInfo("Bhakthi Yoga","Red","S","Sattva","14.6","Amongst these, sattva guna, the mode of goodness, being purer than the others, is illuminating and full of well-being. O sinless one, it binds the soul by creating attachment for a sense of happiness and knowledge.","तत्र सत्त्वं निर्मलत्वात्प्रकाशकमनामयम् | सुखसङ्गेन बध्नाति ज्ञानसङ्गेन चानघ ||"),
-CardInfo("Bhakthi Yoga","Red","M","Maya","7.14","My divine energy Maya consisting of the three modes of nature is very difficult to overcome. But those who surrender unto Me cross over it easily. ","दैवी ह्येषा गुणमयी मम माया दुरत्यया | मामेव ये प्रपद्यन्ते मायामेतां तरन्ति ते ||"),
-CardInfo("Bhakthi Yoga","Red","Sa","Samsara","9.3","People who have no faith in this dharma are unable to attain Me, O conqueror of enemies. They repeatedly come back to this world in the cycle of birth and death.","अश्रद्दधाना: पुरुषा धर्मस्यास्य परन्तप | अप्राप्य मां निवर्तन्ते मृत्युसंसारवर्त्मनि ||"),
-CardInfo("Bhakthi Yoga","Red","Re","Rebirth","2.12","Never was there a time when I did not exist, nor you, nor all these kings; nor in the future shall any of us cease to be.","न त्वेवाहं जातु नासं न त्वं नेमे जनाधिपाः | न चैव न भविष्याम: सर्वे वयमत: परम् ||"),
-CardInfo("Bhakthi Yoga","Red","So","Soul","2.24","The soul is unbreakable and incombustible; it can neither be dampened nor dried. It is everlasting, in all places, unalterable, immutable, and primordial.","अच्छेद्योऽयमदाह्योऽयमक्लेद्योऽशोष्य एव च | नित्य: सर्वगत: स्थाणुरचलोऽयं सनातन: ||"),
+CardInfo("Bhakthi Yoga","Red","M","Maya","7.14","My divine energy Maya consisting of tamas,rajas & Sattva is very difficult to overcome. But those who surrender unto Me cross over it easily. ","दैवी ह्येषा गुणमयी मम माया दुरत्यया | मामेव ये प्रपद्यन्ते मायामेतां तरन्ति ते ||"),
+CardInfo("Bhakthi Yoga","Red","T","Tamas","14.8","O Arjun tamo guána which is born of ignorance is the cause of illusion for the embodied souls. It deludes all living beings through negligence laziness and sleep. ","तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम् | प्रमादालस्यनिद्राभिस्तन्निबध्नाति भारत ||"),
+CardInfo("Bhakthi Yoga","Red","R","Rajas","14.7","O Arjun, rajo guna is of the nature of passion. It arises from worldly desires and affections, and binds the soul through attachment to fruitive actions.","रजो रागात्मकं विद्धि तृष्णासङ्गसमुद्भवम् | तन्निबध्नाति कौन्तेय कर्मसङ्गेन देहिनम् ||"),
+CardInfo("Bhakthi Yoga","Red","S","Sattva","14.6","Amongst these, sattva guna, the mode of goodness, being purer than the others, is illuminating and full of well-being. O sinless one, it binds the soul by creating attachment for a sense of happiness and knowledge.","तत्र सत्त्वं निर्मलत्वात्प्रकाशकमनामयम् | सुखसङ्गेन बध्नाति ज्ञानसङ्गेन चानघ ||"),
+CardInfo("Bhakthi Yoga","Red","M","Maya","7.14","My divine energy Maya consisting of tamas,rajas & Sattva is very difficult to overcome. But those who surrender unto Me cross over it easily. ","दैवी ह्येषा गुणमयी मम माया दुरत्यया | मामेव ये प्रपद्यन्ते मायामेतां तरन्ति ते ||"),
 CardInfo("Karma Yoga","Green","0","Bondage","18.27,18.28","Trapped in Maya, the passionate act with fear, stress and anxiety. Others, cloaked by laziness, loose interest. Both, blind to the consequences of their choices, inflict pain on the world. They are like children playing in the sand, unaware of the tide that will wash away all.","रागी कर्मफलप्रेप्सुर्लुब्धो हिंसात्मकोऽशुचि: | हर्षशोकान्वित: कर्ता राजस: परिकीर्तित: || अयुक्त: प्राकृत: स्तब्ध: शठो नैष्कृतिकोऽलस: | विषादी दीर्घसूत्री च कर्ता तामस उच्यते ||"),
 CardInfo("Karma Yoga","Green","1","Grief","3.36","Arjuna asked: Why do people commit sin, become lazy, and fearful even against their own wish, as if driven by an unseen force within?","अथ केन प्रयुक्तोऽयं पापं चरति पूरुष: | अनिच्छन्नपि वार्ष्णेय बलादिव नियोजित: ||"),
 CardInfo("Karma Yoga","Green","2","Motivation","2.1,2.3","Seeing Arjuna in tears, full of pity and grief, Krishna spoke with a smile. Why has this doubt gripped you at this important hour? This isn't the way for a hero. It won't bring glory, only shame. Don't give in to this weakness. Be strong, rise above it, O, conqueror of evil!","तं तथा कृपयाविष्टमश्रुपूर्णाकुलेक्षणम् | विषीदन्तमिदं वाक्यमुवाच मधुसूदन: ||"),
@@ -97,14 +105,18 @@ CardInfo("Karma Yoga","Green","7","Leadership","3.22-23","There is no duty for M
 CardInfo("Karma Yoga","Green","8","Work Instruments","11.32-33","The Supreme Lord said: I am mighty Time and the work is already done. Body is the expert instrument. Therefore arise, awake, do your duty and attain honor! ","कालोऽस्मि लोकक्षयकृत्प्रवृद्धोलोकान्स माहर्तुमिह प्रवृत्त: | ऋतेऽपि त्वां न भविष्यन्ति सर्वेयेऽवस्थिता: प्रत्यनीकेषु योधा: || तस्मात्त्वमुत्तिष्ठ यशो लभस्वजित्वा शत्रून्भुङ् क्ष्व राज्यं समृद्धम् | मयैवैते निहता: पूर्वमेवनिमित्तमात्रं भव सव्यसाचिन् ||"),
 CardInfo("Karma Yoga","Green","9","KarmaYoga","2.47","You have a right to perform your prescribed duties, but you are not entitled to the fruits of your actions. Never consider yourself to be the cause of the results of your activities, nor be attached to inaction.","कर्मण्येवाधिकारस्ते मा फलेषु कदाचन | मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ||"),
 CardInfo("Karma Yoga","Green","10","Freedom","3.31","Those who abide by these teachings of Mine with profound faith and free from envy are released from the bondage of karma. ","ये मे मतमिदं नित्यमनुतिष्ठन्ति मानवा: | श्रद्धावन्तोऽनसूयन्तो मुच्यन्ते तेऽपि कर्मभि: ||"),
-CardInfo("Karma Yoga","Green","Av","Avatar","4.7","Whenever there is a decline in righteousness and an increase in unrighteousness O Arjun at that time I manifest Myself on earth. ","यदा यदा हि धर्मस्य ग्लानिर्भवति भारत | अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम् ||"),
+CardInfo("Karma Yoga","Green","Av","Avatar","4.8","To protect the righteous, to annihilate the wicked, and to reestablish the principles of dharma I appear on this earth, age after age.","परित्राणाय साधूनां विनाशाय च दुष्कृताम् | धर्मसंस्थापनार्थाय सम्भवामि युगे युगे ||"),
+CardInfo("Karma Yoga","Green","So","Soul","2.23","Weapons cannot shred the soul, nor can fire burn it. Water cannot wet it, nor can the wind dry it.","नैनं छिन्दन्ति शस्त्राणि नैनं दहति पावक: | न चैनं क्लेदयन्त्यापो न शोषयति मारुत: ||"),
+CardInfo("Karma Yoga","Green","Sa","Samsara","9.10","The world keeps revolving to produce moving and unmoving objects under my direction","मयाध्यक्षेण प्रकृति: सूयते सचराचरम् |हेतुनानेन कौन्तेय जगद्विपरिवर्तते ||"),
+CardInfo("Karma Yoga","Green","Re","Rebirth","2.12","Never was there a time when I did not exist, nor you, nor all these kings; nor in the future shall any of us cease to be.","न त्वेवाहं जातु नासं न त्वं नेमे जनाधिपाः | न चैव न भविष्याम: सर्वे वयमत: परम् ||"),
 CardInfo("Karma Yoga","Green","T","Tamas","14.8","O Arjun tamo guána which is born of ignorance is the cause of illusion for the embodied souls. It deludes all living beings through negligence laziness and sleep. ","तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम् | प्रमादालस्यनिद्राभिस्तन्निबध्नाति भारत ||"),
 CardInfo("Karma Yoga","Green","R","Rajas","14.7","O Arjun, rajo guna is of the nature of passion. It arises from worldly desires and affections, and binds the soul through attachment to fruitive actions.","रजो रागात्मकं विद्धि तृष्णासङ्गसमुद्भवम् | तन्निबध्नाति कौन्तेय कर्मसङ्गेन देहिनम् ||"),
 CardInfo("Karma Yoga","Green","S","Sattva","14.6","Amongst these, sattva guna, the mode of goodness, being purer than the others, is illuminating and full of well-being. O sinless one, it binds the soul by creating attachment for a sense of happiness and knowledge.","तत्र सत्त्वं निर्मलत्वात्प्रकाशकमनामयम् | सुखसङ्गेन बध्नाति ज्ञानसङ्गेन चानघ ||"),
-CardInfo("Karma Yoga","Green","M","Maya","7.14","My divine energy Maya consisting of the three modes of nature is very difficult to overcome. But those who surrender unto Me cross over it easily. ","दैवी ह्येषा गुणमयी मम माया दुरत्यया | मामेव ये प्रपद्यन्ते मायामेतां तरन्ति ते ||"),
-CardInfo("Karma Yoga","Green","Sa","Samsara","9.3","People who have no faith in this dharma are unable to attain Me, O conqueror of enemies. They repeatedly come back to this world in the cycle of birth and death.","अश्रद्दधाना: पुरुषा धर्मस्यास्य परन्तप | अप्राप्य मां निवर्तन्ते मृत्युसंसारवर्त्मनि ||"),
-CardInfo("Karma Yoga","Green","Re","Rebirth","2.12","Never was there a time when I did not exist, nor you, nor all these kings; nor in the future shall any of us cease to be.","न त्वेवाहं जातु नासं न त्वं नेमे जनाधिपाः | न चैव न भविष्याम: सर्वे वयमत: परम् ||"),
-CardInfo("Karma Yoga","Green","So","Soul","2.24","The soul is unbreakable and incombustible; it can neither be dampened nor dried. It is everlasting, in all places, unalterable, immutable, and primordial.","अच्छेद्योऽयमदाह्योऽयमक्लेद्योऽशोष्य एव च | नित्य: सर्वगत: स्थाणुरचलोऽयं सनातन: ||"),
+CardInfo("Karma Yoga","Green","M","Maya","7.4","Earth, water, fire, air, space, mind, intellect, and ego—these are eight components of My material energy.","भूमिरापोऽनलो वायु: खं मनो बुद्धिरेव च | अहङ्कार इतीयं मे भिन्ना प्रकृतिरष्टधा || 4"),
+CardInfo("Karma Yoga","Green","T","Tamas","14.8","O Arjun tamo guána which is born of ignorance is the cause of illusion for the embodied souls. It deludes all living beings through negligence laziness and sleep. ","तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम् | प्रमादालस्यनिद्राभिस्तन्निबध्नाति भारत ||"),
+CardInfo("Karma Yoga","Green","R","Rajas","14.7","O Arjun, rajo guna is of the nature of passion. It arises from worldly desires and affections, and binds the soul through attachment to fruitive actions.","रजो रागात्मकं विद्धि तृष्णासङ्गसमुद्भवम् | तन्निबध्नाति कौन्तेय कर्मसङ्गेन देहिनम् ||"),
+CardInfo("Karma Yoga","Green","S","Sattva","14.6","Amongst these, sattva guna, the mode of goodness, being purer than the others, is illuminating and full of well-being. O sinless one, it binds the soul by creating attachment for a sense of happiness and knowledge.","तत्र सत्त्वं निर्मलत्वात्प्रकाशकमनामयम् | सुखसङ्गेन बध्नाति ज्ञानसङ्गेन चानघ ||"),
+CardInfo("Karma Yoga","Green","M","Maya","7.4","Earth, water, fire, air, space, mind, intellect, and ego—these are eight components of My material energy.","भूमिरापोऽनलो वायु: खं मनो बुद्धिरेव च | अहङ्कार इतीयं मे भिन्ना प्रकृतिरष्टधा || 4"),
 CardInfo("Raja Yoga","Blue","0","Restless Mind","6.34","The mind is very restless turbulent strong and obstinate O Krishna. It appears to me that it is more difficult to control than the wind. ","चञ्चलं हि मन: कृष्ण प्रमाथि बलवद्दृढम् | तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ||"),
 CardInfo("Raja Yoga","Blue","1","Unhealthy","2.66","But an undisciplined person who has not controlled the mind and senses can neither have a resolute intellect nor steady contemplation on God. For one who never unites the mind with God there is no peace; and how can one who lacks peace be happy? ","नास्ति बुद्धिरयुक्तस्य न चायुक्तस्य भावना | न चाभावयत: शान्तिरशान्तस्य कुत: सुखम् ||"),
 CardInfo("Raja Yoga","Blue","2","Healing","6.5","Elevate yourself through the power of your mind and not degrade yourself for the mind can be the friend and also the enemy of the self. ","उद्धरेदात्मनात्मानं नात्मानमवसादयेत् | आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मन: ||"),
@@ -128,21 +140,25 @@ CardInfo("Raja Yoga","Blue","8","YogaMat","6.10","Those who seek Samadhi should 
 CardInfo("Raja Yoga","Blue","9","Dhyana","6.1","Those who seek the state of Yog should reside in seclusion, constantly engaged in meditation with a controlled mind and body, getting rid of desires and possessions for enjoyment.","अनाश्रित: कर्मफलं कार्यं कर्म करोति य: | स संन्यासी च योगी च न निरग्निर्न चाक्रिय: ||"),
 CardInfo("Raja Yoga","Blue","10","Samadhi","6.15,6.20","When the mind becomes still by the practice of Yog, then the yogi is able to behold the soul through the purified mind, and he rejoices in the inner joy. Thus, constantly keeping the mind absorbed in Me, the yogi of disciplined mind attains nirvan, and abides in Me in supreme peace.","ुञ्जन्नेवं सदात्मानं योगी नियतमानस: | शान्तिं निर्वाणपरमां मत्संस्थामधिगच्छति || यत्रोपरमते चित्तं निरुद्धं योगसेवया | यत्र चैवात्मनात्मानं पश्यन्नात्मनि तुष्यति ||"),
 CardInfo("Raja Yoga","Blue","Av","Avatar","4.7","Whenever there is a decline in righteousness and an increase in unrighteousness O Arjun at that time I manifest Myself on earth. ","यदा यदा हि धर्मस्य ग्लानिर्भवति भारत | अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम् ||"),
+CardInfo("Raja Yoga","Blue","So","Soul","2.24","The soul is unbreakable and incombustible; it can neither be dampened nor dried. It is everlasting, in all places, unalterable, immutable, and primordial.","अच्छेद्योऽयमदाह्योऽयमक्लेद्योऽशोष्य एव च | नित्य: सर्वगत: स्थाणुरचलोऽयं सनातन: ||"),
+CardInfo("Raja Yoga","Blue","Sa","Samsara","9.10","The world keeps revolving to produce moving and unmoving objects under my direction","मयाध्यक्षेण प्रकृति: सूयते सचराचरम् |हेतुनानेन कौन्तेय जगद्विपरिवर्तते ||"),
+CardInfo("Raja Yoga","Blue","Re","Rebirth","2.13","Just as the embodied soul continuously passes from childhood to youth to old age, similarly, at the time of death, the soul passes into another body. The wise are not deluded by this.","देहिनोऽस्मिन्यथा देहे कौमारं यौवनं जरा | तथा देहान्तरप्राप्तिर्धीरस्तत्र न मुह्यति ||"),
 CardInfo("Raja Yoga","Blue","T","Tamas","14.8","O Arjun tamo guána which is born of ignorance is the cause of illusion for the embodied souls. It deludes all living beings through negligence laziness and sleep. ","तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम् | प्रमादालस्यनिद्राभिस्तन्निबध्नाति भारत ||"),
 CardInfo("Raja Yoga","Blue","R","Rajas","14.7","O Arjun, rajo guna is of the nature of passion. It arises from worldly desires and affections, and binds the soul through attachment to fruitive actions.","रजो रागात्मकं विद्धि तृष्णासङ्गसमुद्भवम् | तन्निबध्नाति कौन्तेय कर्मसङ्गेन देहिनम् ||"),
 CardInfo("Raja Yoga","Blue","S","Sattva","14.6","Amongst these, sattva guna, the mode of goodness, being purer than the others, is illuminating and full of well-being. O sinless one, it binds the soul by creating attachment for a sense of happiness and knowledge.","तत्र सत्त्वं निर्मलत्वात्प्रकाशकमनामयम् | सुखसङ्गेन बध्नाति ज्ञानसङ्गेन चानघ ||"),
-CardInfo("Raja Yoga","Blue","M","Maya","7.14","My divine energy Maya consisting of the three modes of nature is very difficult to overcome. But those who surrender unto Me cross over it easily. ","दैवी ह्येषा गुणमयी मम माया दुरत्यया | मामेव ये प्रपद्यन्ते मायामेतां तरन्ति ते ||"),
-CardInfo("Raja Yoga","Blue","Sa","Samsara","9.3","People who have no faith in this dharma are unable to attain Me, O conqueror of enemies. They repeatedly come back to this world in the cycle of birth and death.","अश्रद्दधाना: पुरुषा धर्मस्यास्य परन्तप | अप्राप्य मां निवर्तन्ते मृत्युसंसारवर्त्मनि ||"),
-CardInfo("Raja Yoga","Blue","Re","Rebirth","2.12","Never was there a time when I did not exist, nor you, nor all these kings; nor in the future shall any of us cease to be.","न त्वेवाहं जातु नासं न त्वं नेमे जनाधिपाः | न चैव न भविष्याम: सर्वे वयमत: परम् ||"),
-CardInfo("Raja Yoga","Blue","So","Soul","2.24","The soul is unbreakable and incombustible; it can neither be dampened nor dried. It is everlasting, in all places, unalterable, immutable, and primordial.","अच्छेद्योऽयमदाह्योऽयमक्लेद्योऽशोष्य एव च | नित्य: सर्वगत: स्थाणुरचलोऽयं सनातन: ||"),
+CardInfo("Raja Yoga","Blue","M","Maya","7.25","I am not manifest to everyone, being veiled by My divine Yogmaya energy. Hence, those without knowledge do not know that I am without birth and changeless.","नाहं प्रकाश: सर्वस्य योगमायासमावृत: |मूढोऽयं नाभिजानाति लोको मामजमव्ययम् ||"),
+CardInfo("Raja Yoga","Blue","T","Tamas","14.8","O Arjun tamo guána which is born of ignorance is the cause of illusion for the embodied souls. It deludes all living beings through negligence laziness and sleep. ","तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम् | प्रमादालस्यनिद्राभिस्तन्निबध्नाति भारत ||"),
+CardInfo("Raja Yoga","Blue","R","Rajas","14.7","O Arjun, rajo guna is of the nature of passion. It arises from worldly desires and affections, and binds the soul through attachment to fruitive actions.","रजो रागात्मकं विद्धि तृष्णासङ्गसमुद्भवम् | तन्निबध्नाति कौन्तेय कर्मसङ्गेन देहिनम् ||"),
+CardInfo("Raja Yoga","Blue","S","Sattva","14.6","Amongst these, sattva guna, the mode of goodness, being purer than the others, is illuminating and full of well-being. O sinless one, it binds the soul by creating attachment for a sense of happiness and knowledge.","तत्र सत्त्वं निर्मलत्वात्प्रकाशकमनामयम् | सुखसङ्गेन बध्नाति ज्ञानसङ्गेन चानघ ||"),
+CardInfo("Raja Yoga","Blue","M","Maya","7.25","I am not manifest to everyone, being veiled by My divine Yogmaya energy. Hence, those without knowledge do not know that I am without birth and changeless.","नाहं प्रकाश: सर्वस्य योगमायासमावृत: |मूढोऽयं नाभिजानाति लोको मामजमव्ययम् ||"),
 ]
 
 def color_to_rgb(color_name):
     colors = {
-        "red": (255, 0, 0),
-        "green": (0, 255, 0),
-        "blue": (100, 100, 255),
-        "yellow": (255, 255, 0),
+        "red": (230, 0, 0),
+        "green": (0, 200, 0),
+        "blue": (120, 120, 210),
+        "yellow": (220, 200, 0),
     }
     return colors.get(color_name.lower(), (0, 0, 0))
 
@@ -159,7 +175,7 @@ def draw_text(img, text, font, position, color):
 
 def create_base_image():
     width, height = 750, 1127
-    return Image.new('RGBA', (width, height))
+    return Image.new('RGBA', (width, height), color=(255, 255, 255, 255))
 
 def draw_background(img, card_info):
     bk_img = Image.open('background.jpg')
@@ -204,7 +220,7 @@ def draw_number(img, card_info, text_color):
 def draw_title(img, card_info, text_color):
     font = ImageFont.truetype('NotoSansDevanagari-Bold.ttf', 60)
     card_info.title = card_info.title.capitalize()
-    draw_text(img, center_string(card_info.title, 16), font, (160, 65), text_color)
+    draw_text(img, center_string(card_info.title, 16), font, (170, 65), text_color)
     return img
 
 def draw_multiline_text(img, lines, font, start_y, text_color):
@@ -218,26 +234,28 @@ def draw_multiline_text(img, lines, font, start_y, text_color):
 
 import re
 
-def fix_letter_order(text):
-  """
-  This function fixes the placement of vowel matras at the end of words in Sanskrit text.
-
-  Args:
-      text: The Sanskrit text string.
-
-  Returns:
-      The corrected Sanskrit text string.
-  """
-  pattern = r"(\p{L})ि "  # Matches any letter followed by 'ि '
-  replacement = r"ि\1 "   # Replaces with 'ि' followed by captured letter and ' '
-  corrected_text = re.sub(pattern, replacement, text)
-  return corrected_text
+def fix_letter_order(text, d):
+    corrected_words = []
+    for word in text.split(d):
+        # Check if the word ends with the matra
+        if word and word[-1] == "ि":
+            # Swap the matra with the second-last character (if it exists)
+            if len(word) > 2:
+                c = word[-2]
+                corrected_words.append( word[:-3] + "ि" + c)
+            else:
+                # Handle single-character words (leave matra as is)
+                corrected_words.append(word)
+        else:
+            corrected_words.append(word)
+    return d.join(corrected_words)
+    
 
 
 def draw_sanskrit(img, card_info, text_color):
     font = ImageFont.truetype('NotoSansDevanagari-Bold.ttf', 35)
     
-    sanskrit = card_info.sanskrit
+    sanskrit = fix_letter_order(fix_letter_order(card_info.sanskrit,' '),':')
 
     split_lines = [line.strip() for line in sanskrit.replace('|', '#').replace('||', '#').split('#') if line.strip()]
 
@@ -308,9 +326,18 @@ def draw_vno(img, card_info, text_color):
     draw_multiline_text(img,['BG '+card_info.vno],font,530,text_color)
     return img
 
+def capitalize_sentences(text):
+    # Split the text into sentences using a sentence tokenizer (e.g., periods followed by spaces)
+    sentences = text.split(".")
+    # Capitalize the first letter of each sentence
+    capitalized_sentences = [sentence.strip().capitalize() for sentence in sentences]
+    # Join the capitalized sentences back into a string with spaces
+    return ". ".join(capitalized_sentences)    
+
 def draw_vdesc(img, card_info, text_color):
     font = ImageFont.truetype('NotoSansDevanagari-Bold.ttf', 35)
-    card_info.vdesc = card_info.vdesc.capitalize()
+
+    card_info.vdesc = capitalize_sentences(card_info.vdesc)
     lines = textwrap.wrap(card_info.vdesc, width=(310) // font.getsize(' ')[0])
     padding_lines = 9 - len(lines)
     lines = [" " * (len(lines[0]) // 2)] * (padding_lines // 2) + lines + [" " * (len(lines[0]) // 2)] * (padding_lines - padding_lines // 2)
@@ -363,7 +390,7 @@ def save_page(images, page_number):
     card_x = 5
     card_y = 5
     for i, img in enumerate(images):
-        page_img.paste(img, (card_x, card_y))
+        page_img.paste(img, (15+card_x, 10+card_y))
         card_x += card_width + 5
         if (i + 1) % cards_per_row == 0:
             card_x = 5
@@ -390,27 +417,12 @@ def png_to_pdf(folder_path, output_filename):
     Image.open(os.path.join(folder_path,f))
     for f in os.listdir(folder_path) if f.endswith(".png")]
 
-  resized_images = [i.resize((i.width//3,i.height//3)).convert("RGB") for i in images]
+  resized_images = [i.resize((i.width//1,i.height//1)).convert("RGB") for i in images]
 
   resized_images[0].save(
       output_filename, "PDF" ,resolution=100.0, save_all=True, append_images=resized_images[1:]
   )
-
-def fix_letter_order(text, d):
-    corrected_words = []
-    for word in text.split(d):
-        # Check if the word ends with the matra
-        if word and word[-1] == "ि":
-            # Swap the matra with the second-last character (if it exists)
-            if len(word) > 2:
-                c = word[-2]
-                corrected_words.append( word[:-3] + "ि" + c)
-            else:
-                # Handle single-character words (leave matra as is)
-                corrected_words.append(word)
-        else:
-            corrected_words.append(word)
-    return d.join(corrected_words)
+   
 
 import shutil
 def main():
@@ -422,8 +434,6 @@ def main():
     
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
         for card_info in card_deck:
-            card_info.sanskrit = fix_letter_order(fix_letter_order(card_info.sanskrit,' '),':')
-            # print(card_info.title,card_info.sanskrit)
             executor.submit(process_card, card_info)
     png_to_pdf(new_dir,'gc.pdf')
 
