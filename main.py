@@ -4,6 +4,10 @@ import os
 import concurrent.futures
 
 
+def create_base_image():
+    width, height = 750, 1127
+    return Image.new('RGBA', (width, height), color=(255, 255, 255, 255))
+
 class CardInfo:
     def __init__(self, yoga, color, number, title, vno, vdesc, sanskrit):
         self.yoga = yoga
@@ -13,6 +17,7 @@ class CardInfo:
         self.vno = vno
         self.vdesc = vdesc
         self.sanskrit = sanskrit
+        self.img = create_base_image()
 
 card_deck = [
 CardInfo("Jnana Yoga","Yellow","0","ignorance","2.42,2.43","lost in misunderstanding, many are: Crave for fame, power, gold and sense pleasures in exhchange for rituals the books prescribe, but miss the deeper truth they hide. Through wisdom and compassion, the truth we connect, not through passion and selfish effect.","यामिमां पुष्पितां वाचं प्रवदन्त्यविपश्चित: | वेदवादरता: पार्थ नान्यदस्तीति वादिन: || कामात्मान: स्वर्गपरा जन्मकर्मफलप्रदाम् | क्रियाविशेषबहुलां भोगैश्वर्यगतिं प्रति ||"),
@@ -172,10 +177,6 @@ def draw_text(img, text, font, position, color):
     d = ImageDraw.Draw(img)
     d.text(position, text, fill=color, font=font)
     return img
-
-def create_base_image():
-    width, height = 750, 1127
-    return Image.new('RGBA', (width, height), color=(255, 255, 255, 255))
 
 def draw_background(img, card_info):
     bk_img = Image.open('background.jpg')
@@ -355,8 +356,10 @@ page_number = 1
 import threading
 lock = threading.Lock()
 
-def process_card(card_info):
-    global images, page_number
+def process_card(i):
+    global images, page_number, card_deck
+    
+    card_info = card_deck[i]
 
     # Create the card image
     img = create_base_image()
@@ -367,16 +370,18 @@ def process_card(card_info):
     img = draw_vno(img, card_info, text_color)
     img = draw_vdesc(img, card_info, text_color)
     img = draw_yoga(img, card_info, text_color)
+    
+    card_deck[i].img = img
 
-    # Append the image to the list
-    with lock:
-        images.append(img)
+    # # Append the image to the list
+    # with lock:
+        # images.append(img)
 
-        # If the list reaches the size of an A4 page, save the page and reset
-        if len(images) >= 9:  # Assuming 4 cards fit on an A4 page
-            save_page(images, page_number)
-            images = []
-            page_number += 1
+        # # If the list reaches the size of an A4 page, save the page and reset
+        # if len(images) >= 9:  # Assuming 4 cards fit on an A4 page
+            # save_page(images, page_number)
+            # images = []
+            # page_number += 1
 
 def save_page(images, page_number):
     # Create a new A4-sized page
@@ -436,8 +441,18 @@ def main():
     os.mkdir(new_dir)
     
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
-        for card_info in card_deck:
-            executor.submit(process_card, card_info)
+        for i, card_info in enumerate(card_deck):
+            executor.submit(process_card, i)
+            
+    # If the list reaches the size of an A4 page, save the page and reset
+        
+    batch_size = 9
+    page_number = 0
+    for i in range(0, len(card_deck), batch_size):
+        images = [c.img for c in card_deck[i:i+batch_size]]
+        save_page(images, page_number)
+        page_number += 1
+            
     png_to_pdf(new_dir,'gc.pdf')
 
 if __name__ == "__main__":
