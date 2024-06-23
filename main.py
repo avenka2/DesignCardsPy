@@ -155,10 +155,10 @@ CardInfo("Raja Yoga","Blue","M","Maya","7.25","I am not manifest to everyone, be
 
 def color_to_rgb(color_name):
     colors = {
-        "red": (230, 0, 0),
-        "green": (0, 200, 0),
-        "blue": (120, 120, 210),
-        "yellow": (220, 200, 0),
+        "red": (255, 0, 0),
+        "green": (0, 255, 0),
+        "blue": (30, 30, 255),
+        "yellow": (255, 255, 0),
     }
     return colors.get(color_name.lower(), (0, 0, 0))
 
