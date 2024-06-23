@@ -194,7 +194,7 @@ def draw_background(img, card_info):
 
 
 
-    border_size = 15
+    border_size = 0
   #  bk_img = bk_img.resize((img.width - 2 * border_size, img.height - 2 * border_size))
     seed = (10, 10)
     fill_color = color_to_rgb(card_info.color)
@@ -391,10 +391,10 @@ def save_page(images, page_number):
     card_y = 5
     for i, img in enumerate(images):
         page_img.paste(img, (15+card_x, 10+card_y))
-        card_x += card_width + 5
+        card_x += card_width + 25
         if (i + 1) % cards_per_row == 0:
             card_x = 5
-            card_y += card_height + 5
+            card_y += card_height + 25
 
     # Save the page
     page_img.save(f"gitacards/page_{page_number}.png")
@@ -406,22 +406,25 @@ from reportlab.pdfgen import canvas
 from reportlab.lib.units import inch
 
 def png_to_pdf(folder_path, output_filename):
-  """
-  Converts all PNG files in a folder to a single PDF, preserving A4 size (2480x3508 pixels).
+    global page_number
+    
+    bk_img = Image.open('gitacardscover.png')
+    bk_images = [bk_img for i in range(9)]
 
-  Args:
-    folder_path: Path to the folder containing PNG files.
-    output_filename: Name of the output PDF file.
-  """
-  images = [
-    Image.open(os.path.join(folder_path,f))
-    for f in os.listdir(folder_path) if f.endswith(".png")]
+    page_number = 20
+    save_page(bk_images, page_number)
+    
+    images = [
+        Image.open(os.path.join(folder_path,f))
+        for f in os.listdir(folder_path) if f.endswith(".png")]
 
-  resized_images = [i.resize((i.width//1,i.height//1)).convert("RGB") for i in images]
+    resized_images = [i.resize((i.width//1,i.height//1)).convert("RGB") for i in images]
+    
+    
 
-  resized_images[0].save(
-      output_filename, "PDF" ,resolution=100.0, save_all=True, append_images=resized_images[1:]
-  )
+    resized_images[0].save(output_filename, "PDF" ,resolution=100.0, save_all=True, append_images=resized_images[1:])
+    
+
    
 
 import shutil
