@@ -221,7 +221,7 @@ def draw_number(img, card_info, text_color):
 def draw_title(img, card_info, text_color):
     font = ImageFont.truetype('NotoSansDevanagari-Bold.ttf', 60)
     card_info.title = card_info.title.capitalize()
-    draw_text(img, center_string(card_info.title, 16), font, (170, 65), text_color)
+    draw_text(img, center_string(card_info.title, 16), font, (150, 65), text_color)
     return img
 
 def draw_multiline_text(img, lines, font, start_y, text_color):
@@ -413,24 +413,42 @@ from reportlab.lib.units import inch
 def png_to_pdf(folder_path, output_filename):
     global page_number
     
-    bk_img = Image.open('gitacardscover.png')
-    bk_images = [bk_img for i in range(9)]
-
-    page_number = 20
-    save_page(bk_images, page_number)
-    
+    for f in os.listdir(folder_path):
+        print(f)
+        
     images = [
         Image.open(os.path.join(folder_path,f))
         for f in os.listdir(folder_path) if f.endswith(".png")]
 
     resized_images = [i.resize((i.width//1,i.height//1)).convert("RGB") for i in images]
     
+    last_element = resized_images.pop()
+    final_list = []
+    for element in resized_images:
+        final_list.append(element)
+        final_list.append(last_element)  # Insert last element after each element
+
+    final_list[0].save(output_filename, "PDF" ,resolution=100.0, save_all=True, append_images=final_list[1:])
     
 
-    resized_images[0].save(output_filename, "PDF" ,resolution=100.0, save_all=True, append_images=resized_images[1:])
-    
 
-   
+def increment_char(char):
+  """
+  Increments a single character (assuming it's lowercase alphabet).
+
+  Args:
+      char: The character to be incremented (lowercase alphabet).
+
+  Returns:
+      The incremented character (or the original character if not lowercase alphabet).
+  """
+  if char.islower():
+    next_char = chr(ord(char) + 1)
+    if next_char > 'z':  # Handle wrap-around from 'z' to 'a'
+      next_char = 'a'
+    return next_char
+  else:
+    return char  # Return the original character if not lowercase
 
 import shutil
 def main():
@@ -447,11 +465,18 @@ def main():
     # If the list reaches the size of an A4 page, save the page and reset
         
     batch_size = 9
-    page_number = 0
+    page_number = 'a'
     for i in range(0, len(card_deck), batch_size):
         images = [c.img for c in card_deck[i:i+batch_size]]
         save_page(images, page_number)
-        page_number += 1
+        page_number = increment_char(page_number)
+        
+    bk_img = Image.open('gitacardscover.png')
+    bk_images = [bk_img for i in range(9)]
+
+    save_page(bk_images, page_number)
+    
+        
             
     png_to_pdf(new_dir,'gc.pdf')
 
