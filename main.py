@@ -46,7 +46,7 @@ CardInfo("Jnana Yoga","Yellow","Av","Avatar","9.19","I am mighty Time, the sourc
 CardInfo("Jnana Yoga","Yellow","So","Soul","2.17","That which pervades the entire body, know it to be indestructible. No one can cause the destruction of the imperishable soul.","अविनाशि तु तद्विद्धि येन सर्वमिदं ततम् | विनाशमव्ययस्यास्य न कश्चित्कर्तुमर्हति ||"),
 CardInfo("Jnana Yoga","Yellow","Sa","Samsara","9.10","The world keeps revolving to produce moving and unmoving objects under my direction","मयाध्यक्षेण प्रकृति: सूयते सचराचरम् |हेतुनानेन कौन्तेय जगद्विपरिवर्तते ||"),
 CardInfo("Jnana Yoga","Yellow","Re","Rebirth","2.22","As a person sheds worn-out garments and wears new ones, likewise, at the time of rebirth, the soul casts off its worn-out body and enters a new one.","वासांसि जीर्णानि यथा विहाय नवानि गृह्णाति नरोऽपराणि | तथा शरीराणि विहाय जीर्णा न्यन्यानि संयाति नवानि देही ||"),
-CardInfo("Jnana Yoga","Yellow","T","Tamas","14.8","O Arjun tamo guána which is born of ignorance is the cause of illusion for the embodied souls. It deludes all living beings through negligence laziness and sleep. ","तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम् । प्रमादालस्यनिद्राभिस्तन्निबध्नाति भारत ||"),
+CardInfo("Jnana Yoga","Yellow","T","Tamas","14.8","O Arjun tamo guána which is born of ignorance is the cause of illusion for the embodied souls. It deludes all living beings through negligence laziness and sleep. ","तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम्  | प्रमादालस्यनिद्राभिस्तन्निबध्नाति भारत ||"),
 CardInfo("Jnana Yoga","Yellow","R","Rajas","14.7","O Arjun, rajo guna is of the nature of passion. It arises from worldly desires and affections, and binds the soul through attachment to fruitive actions.","रजो रागात्मकं विद्धि तृष्णासङ्गसमुद्भवम् | तन्निबध्नाति कौन्तेय कर्मसङ्गेन देहिनम् ||"),
 CardInfo("Jnana Yoga","Yellow","S","Sattva","14.6","Amongst these, sattva guna, the mode of goodness, being purer than the others, is illuminating and full of well-being. O sinless one, it binds the soul by creating attachment for a sense of happiness and knowledge.","तत्र सत्त्वं निर्मलत्वात्प्रकाशकमनामयम् | सुखसङ्गेन बध्नाति ज्ञानसङ्गेन चानघ ||"),
 CardInfo("Jnana Yoga","Yellow","M","Maya","7.13","Deluded by the three modes of Maya(tamas,rajas & Sattva), people in this world are unable to know Me, the imperishable and eternal.","त्रिभिर्गुणमयैर्भावैरेभि: सर्वमिदं जगत्  | मोहितं नाभिजानाति मामेभ्य: परमव्ययम् ||"),
@@ -207,21 +207,24 @@ def draw_background(img, card_info):
     return img, text_color
 
 def draw_number(img, card_info, text_color):
-    font = ImageFont.truetype('NotoSansDevanagari-Bold.ttf', 80)
-    number_text = center_string(card_info.number, 3)
+    font = ImageFont.truetype('NotoSansDevanagari-Bold.ttf', 110)
+    number_text = card_info.number
     line_width = font.getsize(number_text)[0]
-    number_img = Image.new('RGB', (line_width, font.getsize(number_text)[1]), color=color_to_rgb(card_info.color))
-    draw_text(number_img, number_text, font, (0, 0), text_color)
-    char_width = int((font.getsize('0')[0]) / 2)
-    img.paste(number_img, (char_width, 20))
+    
+    text_color = (text_color[0]-30,text_color[1]-30,text_color[2]-30)
+    number_img = Image.new('RGB', (line_width, font.getsize(number_text)[1]-10), color=(255,255,255))
+    draw_text(number_img, number_text, font, (0, -15), text_color)
+    number_img = number_img.resize((80,90), Image.LANCZOS)
+    char_width = int((font.getsize('0')[0]) / 2) + 5
+    img.paste(number_img, (char_width, 28))
     number_img = number_img.rotate(180)
-    img.paste(number_img, (img.width - number_img.width - char_width, 1040))
+    img.paste(number_img, (img.width - number_img.width - char_width, 1000))
     return img
 
 def draw_title(img, card_info, text_color):
     font = ImageFont.truetype('NotoSansDevanagari-Bold.ttf', 60)
     card_info.title = card_info.title.capitalize()
-    draw_text(img, center_string(card_info.title, 16), font, (150, 65), text_color)
+    draw_text(img, center_string(card_info.title, 16), font, (150, 55), text_color)
     return img
 
 def draw_multiline_text(img, lines, font, start_y, text_color):
@@ -235,90 +238,111 @@ def draw_multiline_text(img, lines, font, start_y, text_color):
 
 import re
 
-def fix_letter_order(text, d):
-    corrected_words = []
-    for word in text.split(d):
-        # Check if the word ends with the matra
-        if word and word[-1] == "ि":
-            # Swap the matra with the second-last character (if it exists)
-            if len(word) > 2:
-                c = word[-2]
-                corrected_words.append( word[:-3] + "ि" + c)
-            else:
-                # Handle single-character words (leave matra as is)
-                corrected_words.append(word)
-        else:
-            corrected_words.append(word)
-    return d.join(corrected_words)
+def fix_letter_order(text):
+  new_text = ""
+  for i in range(len(text)):
+    if i < len(text) - 1 and text[i+1] == "ि":
+      new_text += text[i+1] + text[i]
+    elif text[i] != "ि":
+      new_text += text[i]
+  return new_text    
+    # corrected_words = []
+    # for word in text.split(d):
+        # # Check if the word ends with the matra
+        # if word and word[-1] == "ि":
+            # # Swap the matra with the second-last character (if it exists)
+            # if len(word) > 2:
+                # c = word[-2]
+                # corrected_words.append( word[:-3] + "ि" + c)
+            # else:
+                # # Handle single-character words (leave matra as is)
+                # corrected_words.append(word)
+        # else:
+            # corrected_words.append(word)
+    # return d.join(corrected_words)
     
 
 
-def draw_sanskrit(img, card_info, text_color):
-    font = ImageFont.truetype('NotoSansDevanagari-Bold.ttf', 35)
+def draw_sanskrit(img, card_info, text_color, i):
+    sanskritimages_dir = "sanskritimages"
     
-    sanskrit = fix_letter_order(fix_letter_order(card_info.sanskrit,' '),':')
+    
+    sanskrit_image = Image.open(os.path.join(sanskritimages_dir,str(i)+'.png'))
+    
+    width = 650
+    
+    sanskrit_image = sanskrit_image.resize((int(width),int(sanskrit_image.height*width/sanskrit_image.width)))
+    
+    
+    img.paste(sanskrit_image, (48, 170))
+    
+    return img
+    
+    # font = ImageFont.truetype('NotoSansDevanagari-Bold.ttf', 35)
+    
+    # sanskrit = fix_letter_order(card_info.sanskrit)
 
-    split_lines = [line.strip() for line in sanskrit.replace('|', '#').replace('||', '#').split('#') if line.strip()]
+    # split_lines = [line.strip() for line in sanskrit.replace('|', '#').replace('||', '#').split('#') if line.strip()]
 
-    lines = []
-    intra_split = False;
+    # lines = []
+    # intra_split = False;
 
-    box_width = 46 if len(split_lines) > 4 else 38
+    # box_width = 46 if len(split_lines) > 4 else 38
 
-    if len(split_lines) <= 4:
-        for i, line in enumerate(split_lines):
-            delimiter = ' I' if i % 2 == 0 else ' II'
-            line = line + delimiter
-            line_length = len(line)
+    # if len(split_lines) <= 4:
+        # for i, line in enumerate(split_lines):
+            # delimiter = ' I' if i % 2 == 0 else ' II'
+            # line = line + delimiter
+            # line_length = len(line)
 
-            # Find space closest to the midpoint
-            midpoint = line_length // 2
-            closest_space = None
-            min_distance = line_length  # Initialize with max length
+            # # Find space closest to the midpoint
+            # midpoint = line_length // 2
+            # closest_space = None
+            # min_distance = line_length  # Initialize with max length
 
-            for j, char in enumerate(line):
-                if char == ' ':
-                    distance = abs(j - midpoint)
-                    if distance < min_distance:
-                        min_distance = distance
-                        closest_space = j
+            # for j, char in enumerate(line):
+                # if char == ' ':
+                    # distance = abs(j - midpoint)
+                    # if distance < min_distance:
+                        # min_distance = distance
+                        # closest_space = j
 
-            # Split at the closest space
-            if closest_space is not None:
-                lines.append(line[:closest_space])
-                lines.append(line[closest_space + 1:])
-            else:
-                lines.append(line)  # No space found, use entire line
+            # # Split at the closest space
+            # if closest_space is not None:
+                # lines.append(line[:closest_space])
+                # lines.append(line[closest_space + 1:])
+            # else:
+                # lines.append(line)  # No space found, use entire line
 
-    else:
-        for i, line in enumerate(split_lines):
-            delimiter = ' I' if i % 2 == 0 else ' II'
-            line = line + delimiter
-            line_length = len(line)
-            if line_length > 42:
-                # Logic similar to above for lines longer than 42 characters
-                midpoint = line_length // 2
-                closest_space = None
-                min_distance = line_length
+    # else:
+        # for i, line in enumerate(split_lines):
+            # delimiter = ' I' if i % 2 == 0 else ' II'
+            # line = line + delimiter
+            # line_length = len(line)
+            # if line_length > 42:
+                # # Logic similar to above for lines longer than 42 characters
+                # midpoint = line_length // 2
+                # closest_space = None
+                # min_distance = line_length
 
-                for j, char in enumerate(line):
-                    if char == ' ':
-                        distance = abs(j - midpoint)
-                        if distance < min_distance:
-                            min_distance = distance
-                            closest_space = j
+                # for j, char in enumerate(line):
+                    # if char == ' ':
+                        # distance = abs(j - midpoint)
+                        # if distance < min_distance:
+                            # min_distance = distance
+                            # closest_space = j
 
-                if closest_space is not None:
-                    lines.append(line[:closest_space])
-                    lines.append(line[closest_space + 1:])
-                else:
-                    lines.append(line)  # No space found, use entire line
-            else:
-                lines.append(line)  # Line length less than 42, use entire line
+                # if closest_space is not None:
+                    # lines.append(line[:closest_space])
+                    # lines.append(line[closest_space + 1:])
+                # else:
+                    # lines.append(line)  # No space found, use entire line
+            # else:
+                # lines.append(line)  # Line length less than 42, use entire line
 
-    padding_lines = 9 - len(lines)
-    lines = [" " * (len(lines[0]) // 2)] * (padding_lines // 2) + lines + [" " * (len(lines[0]) // 2)] * (padding_lines - padding_lines // 2)
-    return draw_multiline_text(img, lines, font, 180, text_color)
+    # padding_lines = 9 - len(lines)
+    # lines = [" " * (len(lines[0]) // 2)] * (padding_lines // 2) + lines + [" " * (len(lines[0]) // 2)] * (padding_lines - padding_lines // 2)
+    # return draw_multiline_text(img, lines, font, 180, text_color)
 
     
 
@@ -347,7 +371,7 @@ def draw_vdesc(img, card_info, text_color):
 def draw_yoga(img, card_info, text_color):
     font = ImageFont.truetype('NotoSansDevanagari-Bold.ttf', 60)
     card_info.yoga = card_info.yoga.capitalize()
-    draw_text(img, card_info.yoga, font, (150, 1030), text_color)
+    draw_text(img, card_info.yoga, font, (150, 1020), text_color)
     return img
 
 # Initialize the list of images
@@ -366,7 +390,7 @@ def process_card(i):
     img, text_color = draw_background(img, card_info)
     img = draw_number(img, card_info, text_color)
     img = draw_title(img, card_info, text_color)
-    img = draw_sanskrit(img, card_info, text_color)
+    img = draw_sanskrit(img, card_info, text_color, i)
     img = draw_vno(img, card_info, text_color)
     img = draw_vdesc(img, card_info, text_color)
     img = draw_yoga(img, card_info, text_color)
@@ -383,7 +407,10 @@ def process_card(i):
             # images = []
             # page_number += 1
 
-def save_page(images, page_number):
+def save_page(images, page_number, flip):
+    
+    images = [img.resize((720,1008), Image.LANCZOS) for img in images]
+    
     # Create a new A4-sized page
     page_img = create_base_image()
     page_img_width, page_img_height = 2480, 3508
@@ -392,17 +419,22 @@ def save_page(images, page_number):
     # Calculate the position for each card on the page
     card_width, card_height = images[0].width, images[0].height
     cards_per_row = 3
-    card_x = 5
-    card_y = 5
+    card_x = 30
+    card_y = 30
     for i, img in enumerate(images):
         page_img.paste(img, (15+card_x, 10+card_y))
-        card_x += card_width + 25
+        card_x += card_width + 60
         if (i + 1) % cards_per_row == 0:
-            card_x = 5
-            card_y += card_height + 25
-
+            card_x = 30
+            card_y += card_height + 60
+            
+    if flip:
+        page_img = page_img.transpose(Image.FLIP_LEFT_RIGHT)
+        
+    page_img = page_img.resize((page_img.width//3,page_img.height//3), Image.LANCZOS)            
+        
     # Save the page
-    page_img.save(f"gitacards/page_{page_number}.png")
+    page_img.save(f"gitacards/page_{page_number}.png",quality=90)
 from PIL import Image
 import img2pdf
 import os
@@ -468,13 +500,13 @@ def main():
     page_number = 'a'
     for i in range(0, len(card_deck), batch_size):
         images = [c.img for c in card_deck[i:i+batch_size]]
-        save_page(images, page_number)
+        save_page(images, page_number,False)
         page_number = increment_char(page_number)
         
     bk_img = Image.open('gitacardscover.png')
     bk_images = [bk_img for i in range(9)]
 
-    save_page(bk_images, page_number)
+    save_page(bk_images, page_number,True)
     
         
             
